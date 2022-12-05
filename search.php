@@ -1,4 +1,8 @@
 <meta charset="utf-8">
+	<html>
+		<meta name="description" content="부엉이 백과사전">
+        <title>백과사전 검색</title>
+		</html>
 <?php
   echo "<h1>";
   $search = $_GET['id'];
@@ -32,7 +36,7 @@
      $count2 = 1;
      foreach($file as $key => $val){
         if ($key == "lastBuildDate") echo "검색일자:".$val."\n";
-           if($count2 == 1)echo "---------------------------------------------------------";
+           if($count2 == 1)echo "<br>---------------------------------------------------------";
               $count2 = 2;
            if ($key == "items"){
               foreach ($val as $key3 => $val3){
